@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+    <style>
+        .edit_user{
+            text-align: center;
+        }
+       
+        a{
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+       .active{
+           background-color: white;
+       }
+       input{
+           border: 2px solid;
+           border-radius: 5px;
+           color: black;
+           font: bolder;
+       }
+       .btn-submit{
+           width: 110px;
+           font-weight: bolder;
+           border-radius: 10px;
+           margin: 30px 0 0 100px;
+           background-color: aqua;
+       }
+       h2{
+           margin: 30px 0 30px 70px
+       }
+
+    </style>
+</head>
+<body>
+    <nav class="nav nav-pills nav-fill nav_box">
+        <a
+          class="nav-item text-dark nav-link border border-dark nav_box"
+          style="background-color: lightgray"
+          href="/Dashboard/manageuser/manageuser.html"
+          >Group Chat</a
+        >
+        <a
+          class="nav-item nav-link text-dark border border-dark nav_box"
+          style="background-color: white"
+          href="../manageuser/manageuser.html"
+          >manage Users</a
+        >
+        <a
+          class="nav-item nav-link text-dark border border-dark nav_box"
+          style="background-color: lightgray"
+          href="../manageDocument/userDocumnet.html"
+          >Manage Documents</a
+        >
+        <a
+          class="nav-item nav-link text-dark border border-dark nav_box"
+          style="background-color: lightgray"
+          href="/welcome.html"
+          >Logout</a
+        >
+      </nav>
+    <div class="edit_user">
+        <h2>Edit User Information</h2>
+        <form action="/Dashboard/manageuser/manageuser.html" method="get">
+            <table cellpadding="12" align="center">
+                <tr>
+                    <td><b>Full Name</b></td>
+                    <td ><input type="text" name="username" value="Anne Hunter"></td>
+                </tr>
+
+                <tr>
+                    <td align="right"><b>Email</b></td>
+                    <td ><input type="email" name="usermail" value="anne.hunter@mail.com"></td>
+                </tr>
+            </table>
+            
+                <input class="btn-submit" type="submit" value="Save">
+            
+        </form>
+    </div>
+
+</body>
+</html>
